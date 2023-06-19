@@ -1,0 +1,42 @@
+@startuml
+Abstract Class Car
+Abstract Class Component
+Car : last_service_date
+Car : warning_light
+Car : components[]
+Car : miles_since_last_service
+Car : needs_service()
+
+Class Calliope
+Class Glissade
+Class Palindrome
+Class Rorschach
+Class Thovex
+Car <|-- Calliope 
+Car <|-- Glissade 
+Car <|-- Palindrome 
+Car <|-- Rorschach 
+Car <|-- Thovex 
+
+Class CapuletEngine
+Class SternmanEngine
+Class WilloughbyEngine
+
+Abstract Class Engine
+Component <|-- Engine
+Engine <|-- CapuletEngine
+Engine <|-- SternmanEngine
+Engine <|-- WilloughbyEngine
+
+Component : car
+Component : needs_service()
+
+Abstract Class Battery 
+Component <|-- Battery
+
+Class SpindlerBattery
+Class NubbinBattery
+
+Battery <|-- SpindlerBattery
+Battery <|-- NubbinBattery
+@enduml
