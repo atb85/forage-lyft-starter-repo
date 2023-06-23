@@ -10,4 +10,4 @@ class SpindlerBattery(Battery) :
 
     def needs_service(self):
         date_diff : timedelta = self.current_date - self.last_service_date
-        return (date_diff.days >= 365*2)
+        return (date_diff.days >= 365*3)
