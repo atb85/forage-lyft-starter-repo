@@ -1,7 +1,7 @@
 from datetime import date
 from datetime import timedelta
 
-from batteries.battery import Battery
+from components.batteries.battery import Battery
 
 class SpindlerBattery(Battery) :
     def __init__(self, last_service_date, current_date) :

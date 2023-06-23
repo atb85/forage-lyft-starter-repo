@@ -1,11 +1,11 @@
 from car import Car
 
-from engines.capulet_engine import CapuletEngine
-from engines.sternman_engine import SternmanEngine
-from engines.willoughby_engine import WilloughbyEngine
+from components.engines.capulet_engine import CapuletEngine
+from components.engines.sternman_engine import SternmanEngine
+from components.engines.willoughby_engine import WilloughbyEngine
 
-from batteries.nubbin_battery import NubbinBattery
-from batteries.spindler_battery import SpindlerBattery
+from components.batteries.nubbin_battery import NubbinBattery
+from components.batteries.spindler_battery import SpindlerBattery
 
 class CarFactory :
     def create_calliope(current_date, last_service_date, current_mileage, last_service_mileage) : 

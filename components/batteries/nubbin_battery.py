@@ -1,4 +1,4 @@
-from batteries.battery import Battery
+from components.batteries.battery import Battery
 
 
 class NubbinBattery(Battery) :

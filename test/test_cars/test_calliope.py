@@ -3,6 +3,7 @@ import unittest
 
 from car_factory import CarFactory
 
+
 class TestCalliope(unittest.TestCase) :
     def test_no_service_should_be_called(self) :
         calliope = CarFactory.create_calliope(datetime.now(), datetime.now() - timedelta(days=800), 29000, 0)
